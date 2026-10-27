@@ -1,0 +1,21 @@
+[project]
+name = "demo-workshop"
+version = "0.1.0"
+description = "Demo Workshop for Prompt Registry and AI Gateway using MLflow 3.13"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.8",
+    "loguru>=0.7.3",
+    "mlflow[gateway]==3.13",
+    "nest-asyncio>=1.6.0",
+    "openai>=2,<3",
+    "pydantic-ai-slim[openai]>=1,<2",
+    "python-dotenv>=1.2.2",
+]
+
+[dependency-groups]
+dev = [
+    "nbclient>=0.11.0",
+    "nbformat>=5.10.4",
+]
